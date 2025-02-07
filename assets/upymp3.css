@@ -1,0 +1,103 @@
+/* UPYMP3 Plugin Styles */
+.upymp3-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.upymp3-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.upymp3-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.upymp3-input:focus {
+    border-color: #0073aa;
+}
+
+.upymp3-button {
+    width: 100%;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.upymp3-button:hover {
+    background: #005a87;
+}
+
+.upymp3-status {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.upymp3-loader {
+    display: none;
+    margin: 10px auto;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #0073aa;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Download link styling */
+.upymp3-download {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.upymp3-download:hover {
+    background: #218838;
+}
+
+@media (max-width: 600px) {
+    .upymp3-container {
+        width: 90%;
+    }
+
+    .upymp3-input {
+        font-size: 14px;
+    }
+
+    .upymp3-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
